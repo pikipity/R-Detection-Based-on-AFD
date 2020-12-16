@@ -1,9 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The code is prepared by Ze Wang. If you find any problem, please contact
-% wangze19910407@gmail.com
-%
-% This code can only be used for research studies. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear;clc;
 ID=[100 101];
 h=waitbar(0,'Start');

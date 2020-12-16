@@ -9,12 +9,6 @@ function [f_recovery,err,a,k,F,coef,energy_error,reminder,C,tem_B_store,G,base_s
 %         'err' is the relative error in 2_Norm;
 %         'a' is an array in the unit disk of complex plane;
 %         'k' is the iterative times;
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The code is prepared by Ze Wang. If you find any problem, please contact
-% wangze19910407@gmail.com
-%
-% This code can only be used for research studies. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 if nargin==1
     n=50;

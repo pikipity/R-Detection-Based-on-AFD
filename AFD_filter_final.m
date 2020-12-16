@@ -21,13 +21,7 @@ function [f_recovery_final,F,coef,a] =AFD_filter_final( f,SNR,n,tol)
 % Note:
 %   The mean value or linear trend should be removed before using this
 %   function. 
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The code is prepared by Ze Wang. If you find any problem, please contact
-% wangze19910407@gmail.com
-%
-% This code can only be used for research studies. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 if(nargin<2)
     error('need f and SNR');
 elseif(nargin==2)

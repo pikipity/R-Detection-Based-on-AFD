@@ -1,7 +1,5 @@
 function [ret] = Unit_Disk(dist)
 %Discrete the unit disk;
-%input:dist is the step distance and the default is 0.02;
-%????????0.02????????
 %Output is an array;
 if nargin==0
     dist=0.02;

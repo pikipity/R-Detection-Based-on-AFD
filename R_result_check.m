@@ -1,9 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The code is prepared by Ze Wang. If you find any problem, please contact
-% wangze19910407@gmail.com
-%
-% This code can only be used for research studies. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear;clc;
 ID=[100 101];
 ID=ID([1:2])
@@ -30,7 +24,10 @@ collect_RMSE={};
 for ID_number=1:length(ID)
     disp(strcat(num2str(ID_number/length(ID)*100),'%'))
     disp(strcat('ECG_',num2str(ID(ID_number))))
-    if exist(strcat('ECG_',num2str(ID(ID_number)),'_AFD_RL_noise.mat')) && exist(strcat('ECG_',num2str(ID(ID_number)),'_PT_RL.mat'))
+    if exist(strcat('ECG_',num2str(ID(ID_number)),'_AFD_RL_noise.mat')) ...
+            && exist(strcat('ECG_',num2str(ID(ID_number)),'_PT_RL.mat'))
+%             && exist(strcat('ECG_',num2str(ID(ID_number)),'_PT_RL_noise.mat')) ...
+%             && exist(strcat('ECG_',num2str(ID(ID_number)),'_PT_RL_noise_denoising.mat'))
         load(strcat('ECG_',num2str(ID(ID_number)),'_PT_RL.mat'))
         RL=R_PT;
 %         load(strcat('ECG_',num2str(ID(ID_number)),'_AFD_RL.mat'))
@@ -250,7 +247,7 @@ for k=1:5
 %     disp(['+P: ' num2str(P)])
 %     Se_summary(k,2)=Se;
 %     P_summary(k,2)=P;
-%     
+    
 %     disp('PT_noise_denoising')
 %     Se=length(summary_correct_detec_PT_noise_denoising{k})/(length(summary_correct_detec_PT_noise_denoising{k})+length(summary_wrong_detec_PT_noise_denoising{k}));
 %     P=length(summary_correct_detec_PT_noise_denoising{k})/(length(summary_correct_detec_PT_noise_denoising{k})+length(summary_miss_PT_noise_denoising{k}));
